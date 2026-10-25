@@ -1,0 +1,116 @@
+{
+  "_note": "AUTHORED pilot rubrics for PedagogyEval AI (not from an external dataset). Equal concept weights summing to max_marks.",
+  "rubrics": [
+    {
+      "question_id": "Q1_photosynthesis",
+      "question": "Explain what happens during photosynthesis.",
+      "reference_answer": "Plants absorb light energy and take in carbon dioxide from the air and water from the soil, converting them into glucose and releasing oxygen as a by-product.",
+      "max_marks": 4,
+      "concepts": [
+        {"id": "c1", "name": "light energy", "description": "Light energy from the sun is absorbed by the plant", "weight": 1,
+         "synonyms": ["sunlight", "light energy", "light", "solar energy", "energy from the sun", "sun's energy"]},
+        {"id": "c2", "name": "carbon dioxide intake", "description": "The plant takes in carbon dioxide from the air", "weight": 1,
+         "synonyms": ["take in carbon dioxide", "takes in carbon dioxide", "absorb carbon dioxide", "absorbs carbon dioxide", "use * carbon dioxide", "uses * carbon dioxide", "carbon dioxide from the air", "absorb co2", "absorbs co2", "take in co2", "co2 from the air"]},
+        {"id": "c3", "name": "glucose produced", "description": "Glucose (sugar) is produced as food for the plant", "weight": 1,
+         "synonyms": ["glucose", "sugar", "food", "carbohydrate", "starch"]},
+        {"id": "c4", "name": "oxygen released", "description": "Oxygen is released as a by-product", "weight": 1,
+         "synonyms": ["release oxygen", "releases oxygen", "oxygen is released", "give off oxygen", "gives off oxygen", "give out oxygen", "produce oxygen", "produces oxygen", "make * oxygen", "makes * oxygen", "oxygen as a by-product", "release o2", "give off o2"]}
+      ],
+      "edges": [
+        {"source": "c1", "target": "c3", "relation": "leads_to"},
+        {"source": "c2", "target": "c3", "relation": "part_of"},
+        {"source": "c3", "target": "c4", "relation": "leads_to"}
+      ]
+    },
+    {
+      "question_id": "Q2_osmosis",
+      "question": "What is osmosis?",
+      "reference_answer": "Osmosis is the movement of water molecules across a partially permeable membrane from a dilute solution to a more concentrated solution.",
+      "max_marks": 3,
+      "concepts": [
+        {"id": "c1", "name": "movement of water", "description": "Water molecules move", "weight": 1,
+         "synonyms": ["water", "water molecules", "solvent"]},
+        {"id": "c2", "name": "partially permeable membrane", "description": "Through a partially permeable membrane", "weight": 1,
+         "synonyms": ["partially permeable membrane", "semi-permeable membrane", "semipermeable membrane", "selectively permeable membrane", "membrane"]},
+        {"id": "c3", "name": "dilute to concentrated", "description": "From a dilute solution to a more concentrated solution, down the water concentration gradient", "weight": 1,
+         "synonyms": ["dilute to * concentrated", "from a dilute", "low solute concentration to * high", "lower concentration to * higher", "high water concentration to * low", "higher water potential to * lower", "concentration gradient"]}
+      ],
+      "edges": [
+        {"source": "c1", "target": "c2", "relation": "requires"},
+        {"source": "c3", "target": "c1", "relation": "causes"}
+      ]
+    },
+    {
+      "question_id": "Q3_primary_key",
+      "question": "What is a primary key in a relational database?",
+      "reference_answer": "A primary key is a column or set of columns that uniquely identifies each row in a table; it cannot be NULL and is referenced by foreign keys to link tables.",
+      "max_marks": 3,
+      "concepts": [
+        {"id": "c1", "name": "uniquely identifies rows", "description": "Uniquely identifies each row or record in a table", "weight": 1,
+         "synonyms": ["uniquely identifies", "uniquely identify", "unique", "identifies each row", "identifies each record"]},
+        {"id": "c2", "name": "cannot be null", "description": "Its value must always be present; it cannot be NULL", "weight": 1,
+         "synonyms": ["cannot be null", "can't be null", "not null", "no null values", "never null", "must not be empty"]},
+        {"id": "c3", "name": "links tables via foreign keys", "description": "Other tables reference it through foreign keys to link tables", "weight": 1,
+         "synonyms": ["foreign key", "link tables", "links tables", "relationships between tables", "relate tables"]}
+      ],
+      "edges": [
+        {"source": "c1", "target": "c3", "relation": "requires"},
+        {"source": "c2", "target": "c1", "relation": "part_of"}
+      ]
+    },
+    {
+      "question_id": "Q4_overfitting",
+      "question": "What is overfitting in machine learning?",
+      "reference_answer": "Overfitting happens when a model is too complex and memorises the training data, including its noise, so it performs well on training data but poorly on new, unseen data.",
+      "max_marks": 3,
+      "concepts": [
+        {"id": "c1", "name": "fits training data too closely", "description": "The model memorises the training data including its noise", "weight": 1,
+         "synonyms": ["memorise", "memorises", "memorize", "memorizes", "learns the noise", "fits the training data too", "too closely", "well on training data", "well on the training data"]},
+        {"id": "c2", "name": "poor generalisation", "description": "It performs poorly on new, unseen data", "weight": 1,
+         "synonyms": ["unseen data", "new data", "test data", "poorly on new", "generalise", "generalize", "generalisation", "generalization"]},
+        {"id": "c3", "name": "model too complex", "description": "The model is too complex for the amount of data", "weight": 1,
+         "synonyms": ["too complex", "too many parameters", "complex model", "high variance", "too much capacity"]}
+      ],
+      "edges": [
+        {"source": "c3", "target": "c1", "relation": "causes"},
+        {"source": "c1", "target": "c2", "relation": "leads_to"}
+      ]
+    },
+    {
+      "question_id": "Q5_dns",
+      "question": "What does DNS do?",
+      "reference_answer": "DNS translates human-readable domain names into the numerical IP addresses that computers use to locate each other.",
+      "max_marks": 3,
+      "concepts": [
+        {"id": "c1", "name": "name resolution", "description": "Translates or resolves one thing into another, a lookup", "weight": 1,
+         "synonyms": ["translates", "translate", "resolves", "resolve", "converts", "convert", "maps", "looks up", "lookup", "turns * into"]},
+        {"id": "c2", "name": "domain names", "description": "Human-readable domain names of websites", "weight": 1,
+         "synonyms": ["domain name", "website's name", "website name", "site name", "hostname", "host name", "url", "web address"]},
+        {"id": "c3", "name": "IP addresses", "description": "Numerical IP addresses used by computers", "weight": 1,
+         "synonyms": ["ip address", "ip", "numeric address", "numerical address"]}
+      ],
+      "edges": [
+        {"source": "c1", "target": "c2", "relation": "requires"},
+        {"source": "c1", "target": "c3", "relation": "leads_to"}
+      ]
+    },
+    {
+      "question_id": "Q6_phishing",
+      "question": "What is phishing?",
+      "reference_answer": "Phishing is a social-engineering attack in which an attacker impersonates a trusted organisation in an email or message to trick the victim into revealing sensitive information such as passwords or bank details.",
+      "max_marks": 3,
+      "concepts": [
+        {"id": "c1", "name": "impersonating a trusted source", "description": "The attacker pretends to be a trusted, legitimate organisation", "weight": 1,
+         "synonyms": ["pretend", "pretends", "pretending", "impersonate", "impersonates", "impersonating", "posing as", "disguised as", "trusted", "legitimate", "spoofed"]},
+        {"id": "c2", "name": "stealing sensitive information", "description": "To trick the victim into revealing sensitive information like passwords or bank details", "weight": 1,
+         "synonyms": ["password", "credentials", "personal information", "sensitive information", "bank details", "credit card", "login details"]},
+        {"id": "c3", "name": "delivered by email or message", "description": "Delivered through an email, text message or malicious link", "weight": 1,
+         "synonyms": ["email", "e-mail", "text message", "sms", "link", "fake website"]}
+      ],
+      "edges": [
+        {"source": "c3", "target": "c1", "relation": "part_of"},
+        {"source": "c1", "target": "c2", "relation": "leads_to"}
+      ]
+    }
+  ]
+}

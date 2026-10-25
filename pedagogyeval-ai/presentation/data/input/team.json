@@ -1,0 +1,8 @@
+{
+  "_note": "Edit names/PRNs here; the Home page reads this file (no code edits needed).",
+  "course": "NLP Lab Report",
+  "members": [
+    {"name": "NAME ONE", "prn": "PRN-0000000001"},
+    {"name": "NAME TWO", "prn": "PRN-0000000002"}
+  ]
+}

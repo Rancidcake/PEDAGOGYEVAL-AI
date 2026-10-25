@@ -1,0 +1,31 @@
+model,response_id,response_type,response,gold,pred,max_marks,abs_error,review_reason,missing
+A_tfidf,Q1_full,full,Plants use sunlight and carbon dioxide to make glucose and oxygen.,4.0,2.0,4.0,2.0,,
+A_tfidf,Q1_para,paraphrase,"Leaves capture the sun's energy and absorb CO2 from the air, turning it into sugar while giving off O2.",4.0,2.0,4.0,2.0,,
+A_tfidf,Q2_para,paraphrase,"The solvent passes through a selectively permeable barrier, travelling from the weaker solution into the stronger, more salty one.",3.0,1.0,3.0,2.0,,
+A_tfidf,Q3_para,paraphrase,"It is a field whose value is different for every record and must always be filled in, so that other tables can point to that record.",3.0,1.0,3.0,2.0,,
+A_tfidf,Q4_para,paraphrase,"A model with far more capacity than the data warrants learns its training examples by heart, random quirks included, and then fails on examples it has never seen.",3.0,1.0,3.0,2.0,,
+A_tfidf,Q5_full,full,DNS translates a website's name to an IP address.,3.0,1.0,3.0,2.0,,
+A_tfidf,Q5_para,paraphrase,"When you type example.com, a directory service looks up the numeric location that computers need to reach that site.",3.0,1.0,3.0,2.0,,
+A_tfidf,Q6_para,paraphrase,Criminals message you while posing as your bank so that you hand over your login details.,3.0,1.0,3.0,2.0,,
+A_tfidf,Q1_partial,partial,Photosynthesis is how plants make their own food using light.,2.0,1.0,4.0,1.0,,
+A_tfidf,Q1_wrong,wrong_topical,Plants breathe in oxygen and release carbon dioxide.,0.0,1.0,4.0,1.0,,
+B_embedding,Q1_wrong,wrong_topical,Plants breathe in oxygen and release carbon dioxide.,0.0,2.0444444444444447,4.0,2.0444444444444447,,
+B_embedding,Q1_full,full,Plants use sunlight and carbon dioxide to make glucose and oxygen.,4.0,2.0444444444444447,4.0,1.9555555555555553,,
+B_embedding,Q1_para,paraphrase,"Leaves capture the sun's energy and absorb CO2 from the air, turning it into sugar while giving off O2.",4.0,2.0444444444444447,4.0,1.9555555555555553,,
+B_embedding,Q6_wrong,wrong_topical,Phishing is a virus that slows down your computer by using up its memory.,0.0,1.625,3.0,1.625,,
+B_embedding,Q2_wrong,wrong_topical,Osmosis is when salt particles spread out evenly through the air.,0.0,1.6071428571428572,3.0,1.6071428571428572,,
+B_embedding,Q3_wrong,wrong_topical,A primary key is the password used to unlock and encrypt the database.,0.0,1.6071428571428572,3.0,1.6071428571428572,,
+B_embedding,Q4_wrong,wrong_topical,Overfitting is when the training dataset is too large to fit in memory.,0.0,1.5974006665146567,3.0,1.5974006665146567,,
+B_embedding,Q5_wrong,wrong_topical,DNS encrypts all internet traffic.,0.0,1.541666666666667,3.0,1.541666666666667,,
+B_embedding,Q4_para,paraphrase,"A model with far more capacity than the data warrants learns its training examples by heart, random quirks included, and then fails on examples it has never seen.",3.0,1.5,3.0,1.5,,
+B_embedding,Q6_para,paraphrase,Criminals message you while posing as your bank so that you hand over your login details.,3.0,1.5,3.0,1.5,,
+C_concept,Q4_para,paraphrase,"A model with far more capacity than the data warrants learns its training examples by heart, random quirks included, and then fails on examples it has never seen.",3.0,0.5,3.0,2.5,'model too complex' similarity 0.50 is near t_low=0.50,poor generalisation; model too complex
+C_concept,Q1_wrong,wrong_topical,Plants breathe in oxygen and release carbon dioxide.,0.0,2.0,4.0,2.0,'light energy' similarity 0.48 is near t_low=0.50; 'glucose produced' similarity 0.51 is near t_low=0.50; 'oxygen released' similarity 0.54 is near t_low=0.50,light energy
+C_concept,Q3_para,paraphrase,"It is a field whose value is different for every record and must always be filled in, so that other tables can point to that record.",3.0,1.0,3.0,2.0,'uniquely identifies rows' similarity 0.52 is near t_low=0.50,cannot be null
+C_concept,Q5_para,paraphrase,"When you type example.com, a directory service looks up the numeric location that computers need to reach that site.",3.0,1.0,3.0,2.0,'name resolution': keyword matched but meaning similarity is low (0.23),domain names; IP addresses
+C_concept,Q1_para,paraphrase,"Leaves capture the sun's energy and absorb CO2 from the air, turning it into sugar while giving off O2.",4.0,3.0,4.0,1.0,,oxygen released
+C_concept,Q2_para,paraphrase,"The solvent passes through a selectively permeable barrier, travelling from the weaker solution into the stronger, more salty one.",3.0,2.0,3.0,1.0,'partially permeable membrane' similarity 0.67 is near t_high=0.70; 'dilute to concentrated' similarity 0.51 is near t_low=0.50,
+C_concept,Q6_para,paraphrase,Criminals message you while posing as your bank so that you hand over your login details.,3.0,2.0,3.0,1.0,,delivered by email or message
+C_concept,Q5_partial,partial,DNS is like a phonebook that stores the names of websites.,1.0,0.5,3.0,0.5,,name resolution; IP addresses
+C_concept,Q1_full,full,Plants use sunlight and carbon dioxide to make glucose and oxygen.,4.0,4.0,4.0,0.0,,
+C_concept,Q1_partial,partial,Photosynthesis is how plants make their own food using light.,2.0,2.0,4.0,0.0,,carbon dioxide intake; oxygen released

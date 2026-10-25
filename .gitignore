@@ -1,0 +1,8 @@
+.DS_Store
+**/.DS_Store
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+PedagogyEval_presentation_copy/
+PedagogyEval_presentation.zip
+pedagogyeval-ai/models_cache/

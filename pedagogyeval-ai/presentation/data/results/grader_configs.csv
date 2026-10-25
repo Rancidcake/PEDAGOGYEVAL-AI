@@ -1,0 +1,5 @@
+config,use_semantic,t_high,t_low,check_negation,uniform_weights,fuzzy,neg_window,margin,disagree_floor
+C_concept,True,0.7,0.5,True,False,True,3,0.05,0.3
+C_no_semantic,False,0.7,0.5,True,False,True,3,0.05,0.3
+C_uniform_weights,True,0.7,0.5,True,True,True,3,0.05,0.3
+C_no_negation,True,0.7,0.5,False,False,True,3,0.05,0.3

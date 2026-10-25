@@ -1,0 +1,15 @@
+{
+  "python": "3.11.9",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "numpy": "2.2.6",
+  "pandas": "3.1.0",
+  "torch": "2.14.1",
+  "sklearn": "1.9.1",
+  "sentence_transformers": "6.2.0",
+  "datasets": "5.1.0",
+  "pedagogyeval": "1.0.0",
+  "cuda": false,
+  "seed": 42,
+  "embedding_model_source": "/Users/mayank/Documents/NLPN/pedagogyeval-ai/models_cache/all-MiniLM-L6-v2",
+  "model_load_seconds": 0.27
+}

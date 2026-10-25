@@ -1,0 +1,25 @@
+response_id,question_id,response_type,response,gold_marks,source
+Q1_full,Q1_photosynthesis,full,Plants use sunlight and carbon dioxide to make glucose and oxygen.,4,authored
+Q1_partial,Q1_photosynthesis,partial,Photosynthesis is how plants make their own food using light.,2,authored
+Q1_wrong,Q1_photosynthesis,wrong_topical,Plants breathe in oxygen and release carbon dioxide.,0,authored
+Q1_para,Q1_photosynthesis,paraphrase,"Leaves capture the sun's energy and absorb CO2 from the air, turning it into sugar while giving off O2.",4,authored
+Q2_full,Q2_osmosis,full,Osmosis is the movement of water molecules across a partially permeable membrane from a dilute solution to a more concentrated solution.,3,authored
+Q2_partial,Q2_osmosis,partial,Osmosis is when water moves through a membrane.,2,authored
+Q2_wrong,Q2_osmosis,wrong_topical,Osmosis is when salt particles spread out evenly through the air.,0,authored
+Q2_para,Q2_osmosis,paraphrase,"The solvent passes through a selectively permeable barrier, travelling from the weaker solution into the stronger, more salty one.",3,authored
+Q3_full,Q3_primary_key,full,A primary key is a column that uniquely identifies each row in a table; it cannot be null and other tables reference it through foreign keys.,3,authored
+Q3_partial,Q3_primary_key,partial,A primary key is a unique ID for each record in a table.,1,authored
+Q3_wrong,Q3_primary_key,wrong_topical,A primary key is the password used to unlock and encrypt the database.,0,authored
+Q3_para,Q3_primary_key,paraphrase,"It is a field whose value is different for every record and must always be filled in, so that other tables can point to that record.",3,authored
+Q4_full,Q4_overfitting,full,"Overfitting is when a model is too complex and memorises noise in the training data, so it performs poorly on new unseen data.",3,authored
+Q4_partial,Q4_overfitting,partial,Overfitting means the model does well on the training data but badly on test data.,2,authored
+Q4_wrong,Q4_overfitting,wrong_topical,Overfitting is when the training dataset is too large to fit in memory.,0,authored
+Q4_para,Q4_overfitting,paraphrase,"A model with far more capacity than the data warrants learns its training examples by heart, random quirks included, and then fails on examples it has never seen.",3,authored
+Q5_full,Q5_dns,full,DNS translates a website's name to an IP address.,3,authored
+Q5_partial,Q5_dns,partial,DNS is like a phonebook that stores the names of websites.,1,authored
+Q5_wrong,Q5_dns,wrong_topical,DNS encrypts all internet traffic.,0,authored
+Q5_para,Q5_dns,paraphrase,"When you type example.com, a directory service looks up the numeric location that computers need to reach that site.",3,authored
+Q6_full,Q6_phishing,full,Phishing is a scam where attackers send fake emails pretending to be a trusted company to trick people into revealing passwords or bank details.,3,authored
+Q6_partial,Q6_phishing,partial,Phishing is when someone sends you a suspicious email.,1,authored
+Q6_wrong,Q6_phishing,wrong_topical,Phishing is a virus that slows down your computer by using up its memory.,0,authored
+Q6_para,Q6_phishing,paraphrase,Criminals message you while posing as your bank so that you hand over your login details.,3,authored

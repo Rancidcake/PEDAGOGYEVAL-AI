@@ -1,0 +1,5 @@
+model,label,n,mae,rmse,exact_match,norm_mae,review_rate,delta_mae_vs_full,delta_exact_vs_full,note
+C_concept,C · Concept graph,24,0.5,0.9464847243000456,0.7083333333333334,0.15624999999999997,0.20833333333333334,0.0,0.0,
+C_no_semantic,C − semantic,24,0.5416666666666666,1.0992421631894098,0.7083333333333334,0.17708333333333334,0.0,0.04166666666666663,0.0,
+C_uniform_weights,C − weights (uniform),24,0.5,0.9464847243000456,0.7083333333333334,0.15624999999999997,0.20833333333333334,0.0,0.0,pilot rubrics use equal weights: True
+C_no_negation,C − negation check,24,0.5,0.9464847243000456,0.7083333333333334,0.15624999999999997,0.20833333333333334,0.0,0.0,pilot responses with a negation word: 2; negation flag fired on: 0

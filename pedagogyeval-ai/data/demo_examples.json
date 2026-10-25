@@ -1,0 +1,13 @@
+{
+  "_note": "Quick-load examples for the live demo. Separate from the pilot evaluation; texts marked 'pilot' are copied from data/pilot.csv, 'demo-authored' were written for the demo and have no gold mark.",
+  "examples": [
+    {"key": "paraphrase", "label": "GOOD PARAPHRASE", "question_id": "Q1_photosynthesis", "source": "demo-authored",
+     "response": "Green leaves capture the energy of sunshine and take in CO2 from the air, building sugar and giving off oxygen."},
+    {"key": "incomplete", "label": "INCOMPLETE", "question_id": "Q2_osmosis", "source": "pilot:Q2_partial",
+     "response": "Osmosis is when water moves through a membrane."},
+    {"key": "wrong", "label": "WRONG BUT TOPICAL", "question_id": "Q5_dns", "source": "pilot:Q5_wrong",
+     "response": "DNS encrypts all internet traffic."},
+    {"key": "negation", "label": "NEGATION TRAP", "question_id": "Q1_photosynthesis", "source": "demo-authored",
+     "response": "Plants do not need sunlight; they make glucose from carbon dioxide and release oxygen."}
+  ]
+}
