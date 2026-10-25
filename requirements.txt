@@ -1,0 +1,11 @@
+# Streamlit Community Cloud deployment (app only). Entry point: pedagogyeval-ai/app/Home.py
+# CPU-only torch keeps the build small; the default Linux wheel pulls several GB of CUDA libraries.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+numpy>=1.26,<2.3
+pandas>=2.1
+scikit-learn>=1.4
+networkx>=3.2
+sentence-transformers>=2.7
+streamlit>=1.50
+altair>=5.2
